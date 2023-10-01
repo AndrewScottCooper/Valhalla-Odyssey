@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerData : MonoBehaviour
 {
@@ -39,7 +40,9 @@ public class PlayerData : MonoBehaviour
                 health -= 1;
                 if (health <= 0)
                 {
-                    Destroy(gameObject);
+                    //Destroy(gameObject);
+                    SceneManager.LoadScene("Valhalla"); //zack
+                    SceneManager.SetActiveScene(SceneManager.GetSceneByName("Valhalla")); //zack
                 }
             }
             else
