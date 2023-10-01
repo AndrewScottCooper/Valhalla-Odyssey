@@ -99,7 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aimPoint: {fileID: 6141589672768701544}
   ProjectilePrefab: {fileID: 450044471435314949, guid: 724f9369a143c41418b587f3ba606543, type: 3}
-  ProjectileForce: 20
+  arrowFireRate: 0.5
+  arrowProjectileForce: 20
 --- !u!1 &3521981902190044496
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,8 +290,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f541e2a682a69da43bead8b58c4355b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerUIManager: {fileID: 7180329074669540280, guid: e84b666f459a086478ad40c84d060c31, type: 3}
   health: 3
   maxHealth: 3
+  currArmor: 0
+  maxArmor: 0
+  soulsCollected: 0
   arrowDamage: 1
 --- !u!1 &5702454974434650158
 GameObject:
