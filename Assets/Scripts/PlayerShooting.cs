@@ -13,15 +13,20 @@ public class PlayerShooting : MonoBehaviour
 
     float arrowCooldown = 0f;
 
+    public bool canShoot = true; //  for docking or menus
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Fire1"))
+        if (canShoot)
         {
-            if (arrowCooldown >= arrowFireRate)
-                Shoot(); 
+            if (Input.GetButton("Fire1"))
+            {
+                if (arrowCooldown >= arrowFireRate)
+                    Shoot();
+            }
+            arrowCooldown += Time.deltaTime;
         }
-        arrowCooldown += Time.deltaTime;
     }
 
     void Shoot()
