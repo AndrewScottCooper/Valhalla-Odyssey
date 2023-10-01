@@ -15,19 +15,24 @@ public class Projectile : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // ~~ ~~ WHENEVER we add an impact visual effect we can use this ~~ ~~ //
-        // GameObject effect = Instantiate(impactEffect, transform.position, Quaternion.identity); // play a visual hit effect
-        // Destroy(effect, 5f);\
 
         //only do damage to enemies if we hit something tagged as an enemy
         if (collision.collider.CompareTag("Enemy"))
         {
-          collision.gameObject.GetComponent<EnemyData>().TakeDamage(damage);
+            collision.gameObject.GetComponent<EnemyData>().TakeDamage(damage);
+            Destroy(gameObject);
+            // ~~ ~~ WHENEVER we add an impact visual effect we can use this ~~ ~~ //
+            // GameObject effect = Instantiate(impactEffect, transform.position, Quaternion.identity); // play a visual hit effect
+            // Destroy(effect, 5f);\
+        }
+        else if (collision.collider.CompareTag("Environment"))
+        {
+            Destroy(gameObject);
+            // ~~ ~~ WHENEVER we add an impact visual effect we can use this ~~ ~~ //
+            // GameObject effect = Instantiate(impactEffect, transform.position, Quaternion.identity); // play a visual hit effect
+            // Destroy(effect, 5f);\
         }
 
-        // ~~ ~~ probably need to change this to hit enemy or wall
-        Destroy(gameObject); // destroy the projectile
-        
     }
 
 }
