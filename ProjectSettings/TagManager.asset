@@ -4,7 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - ThrallV1
+  - Enemy
   layers:
   - Default
   - TransparentFX

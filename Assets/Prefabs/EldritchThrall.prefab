@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6792609413608660394}
   m_Layer: 0
   m_Name: EldritchThrall
-  m_TagString: ThrallV1
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
