@@ -10,7 +10,9 @@ public class PlayerController : MonoBehaviour
     public Camera playerCam;
 
     Vector2 movement; // movement direction
-   // Vector2 mousePos; // mouse position
+    // Vector2 mousePos; // mouse position
+
+    bool canMove; // WIP for docking or menus
 
 
     void Update()

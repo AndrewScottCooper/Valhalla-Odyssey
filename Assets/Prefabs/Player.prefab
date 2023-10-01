@@ -297,6 +297,7 @@ MonoBehaviour:
   maxArmor: 0
   soulsCollected: 0
   arrowDamage: 1
+  damageTime: 0.5
 --- !u!1 &5702454974434650158
 GameObject:
   m_ObjectHideFlags: 0
