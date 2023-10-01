@@ -42,7 +42,6 @@ public class PlayerData : MonoBehaviour
                 {
                     //Destroy(gameObject);
                     SceneManager.LoadScene("Valhalla"); //zack
-                    SceneManager.SetActiveScene(SceneManager.GetSceneByName("Valhalla")); //zack
                 }
             }
             else

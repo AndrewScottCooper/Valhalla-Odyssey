@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Portal : MonoBehaviour
 {
 
-    public string targetScene;
+    public int targetScene;
     public bool keyReset = true;
 
     // Start is called before the first frame update
@@ -42,6 +42,5 @@ public class Portal : MonoBehaviour
     private void NextLevel()
     {
         SceneManager.LoadScene(targetScene);
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName(targetScene));
     }
 }

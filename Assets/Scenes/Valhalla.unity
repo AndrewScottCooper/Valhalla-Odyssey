@@ -648,7 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 025cc4a58071d04409b6a795a6874a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: Level1
+  targetScene: 3
   keyReset: 1
 --- !u!1 &1207432024 stripped
 GameObject:
