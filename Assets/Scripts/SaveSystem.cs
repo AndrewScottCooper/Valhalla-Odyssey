@@ -42,6 +42,8 @@ public class SaveSystem : MonoBehaviour
 
         //Example of a way to check if an upgrade has been bought
         PlayerPrefs.SetString("Armor1", "false");
+
+    
     }
 
     public void LoadData()

@@ -34,7 +34,7 @@ public class ThrallProjectile : MonoBehaviour
         if (other.CompareTag("Player")){
             //do damage to player based on attack damage and destroy the projectile
             //damage here
-            Debug.Log("HIT!");
+           // Debug.Log("HIT!");
             other.GetComponent<PlayerData>().takeDamage();
             DestroyProjectile();
         }

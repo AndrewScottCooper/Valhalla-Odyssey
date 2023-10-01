@@ -30,7 +30,7 @@ public class PlayerUI : MonoBehaviour
             }
             //if the value of the player health is less than the max number of health bars and the index is higher than the current health, set the heart to
             //empty health icon
-            else if (player.GetComponent<PlayerData>().health < player.GetComponent<PlayerData>().maxHealth && i >= player.GetComponent<PlayerData>().health)
+            else if (player.GetComponent<PlayerData>().health < player.GetComponent<PlayerData>().maxHealth && i  > player.GetComponent<PlayerData>().health)
             {
                 HealthBar[i].sprite = HealthIcons[1];
             }

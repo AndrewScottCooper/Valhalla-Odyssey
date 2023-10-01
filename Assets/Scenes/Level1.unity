@@ -480,7 +480,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -567936745273303305, guid: 8248f1a9ca1bf344bb10edc54b3946a1, type: 3}
       propertyPath: health
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -567936745273303305, guid: 8248f1a9ca1bf344bb10edc54b3946a1, type: 3}
       propertyPath: maxArmor
@@ -492,7 +492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -567936745273303305, guid: 8248f1a9ca1bf344bb10edc54b3946a1, type: 3}
       propertyPath: maxHealth
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -567936745273303305, guid: 8248f1a9ca1bf344bb10edc54b3946a1, type: 3}
       propertyPath: PlayerUIManager
