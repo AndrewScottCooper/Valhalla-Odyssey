@@ -30,10 +30,10 @@ public class BaseInteraction : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("collision");
+        //Debug.Log("collision");
         if (collision.GetComponent<Rigidbody2D>().CompareTag("Player"))
         {
-            Debug.Log("touching player");
+            //Debug.Log("touching player");
             if (Input.GetButton("Submit"))
             {
                 
