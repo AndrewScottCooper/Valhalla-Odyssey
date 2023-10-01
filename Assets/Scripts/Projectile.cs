@@ -5,14 +5,31 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public int damage;
+    public float arrowLifeTime = 3.0f;
+    float arrowLifeTimeReset = 0f;
+
     public GameObject impactEffect;
     public GameObject player;
+
 
     private void Start()
     {
         //get reference to how much damage the player's arrows do just incase we add damage upgrades
         damage = player.GetComponent<PlayerData>().arrowDamage;        
     }
+
+    private void FixedUpdate()
+    {
+        if (arrowLifeTime <= arrowLifeTimeReset)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            arrowLifeTimeReset += Time.deltaTime; 
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
