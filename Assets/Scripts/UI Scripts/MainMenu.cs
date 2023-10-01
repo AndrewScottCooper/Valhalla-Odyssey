@@ -34,10 +34,12 @@ public class MainMenu : MonoBehaviour
 
     void showhideMainPanel()
     {
+
         mainGroup.gameObject.SetActive(!mainGroup.gameObject.activeSelf);
     }
     void showHideAboutGroup()
     {
+
         aboutGroup.gameObject.SetActive(!aboutGroup.gameObject.activeSelf);
     }
 
