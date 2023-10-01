@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class PlayerData : MonoBehaviour
 {
+    public PlayerUI PlayerUIManager;
 
     public int health;
     public int maxHealth;
+    public int currArmor;
+    public int maxArmor;
+
     public int soulsCollected;
 
 
@@ -15,7 +19,7 @@ public class PlayerData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        PlayerUIManager.UpdateHealthBar();
     }
 
     // Update is called once per frame
@@ -24,12 +28,21 @@ public class PlayerData : MonoBehaviour
         
     }
 
+    //should be updated to take the amount of damage from a specific enemy type later if we change this
     public void takeDamage()
     {
-        health -= 1;
-        if(health <= 0)
+        if (currArmor == 0)
         {
-            Destroy(gameObject);
+            health -= 1;
+            if (health <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
+        else
+        {
+            currArmor -= 1; 
+        }
+        PlayerUIManager.UpdateHealthBar();
     }
 }

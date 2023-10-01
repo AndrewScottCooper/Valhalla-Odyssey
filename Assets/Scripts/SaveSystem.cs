@@ -16,6 +16,8 @@ public class SaveSystem : MonoBehaviour
             PlayerPrefs.SetInt("Health", 3);
             PlayerPrefs.SetInt("MaxHealth", 3);
             PlayerPrefs.SetInt("SoulsCollected", 0);
+            PlayerPrefs.SetInt("Armor", 0);
+            PlayerPrefs.SetInt("MaxArmor", 0);
 
             //Example of a way to check if an upgrade has been bought
             PlayerPrefs.SetString("Armor1", "false");
@@ -35,6 +37,8 @@ public class SaveSystem : MonoBehaviour
         PlayerPrefs.SetInt("MaxHealth", player.GetComponent<PlayerData>().maxHealth);
         PlayerPrefs.SetInt("SoulsCollected", player.GetComponent<PlayerData>().soulsCollected);
         PlayerPrefs.SetInt("ArrowDamage", player.GetComponent<PlayerData>().arrowDamage);
+        PlayerPrefs.SetInt("Armor", player.GetComponent<PlayerData>().currArmor);
+        PlayerPrefs.SetInt("MaxArmor", player.GetComponent<PlayerData>().maxHealth);
 
         //Example of a way to check if an upgrade has been bought
         PlayerPrefs.SetString("Armor1", "false");
@@ -46,6 +50,8 @@ public class SaveSystem : MonoBehaviour
         player.GetComponent<PlayerData>().maxHealth = PlayerPrefs.GetInt("MaxHealth");
         player.GetComponent<PlayerData>().soulsCollected = PlayerPrefs.GetInt("SoulsCollected");
         player.GetComponent<PlayerData>().arrowDamage = PlayerPrefs.GetInt("ArrowDamage");
+        player.GetComponent<PlayerData>().currArmor = PlayerPrefs.GetInt("Armor");
+        player.GetComponent<PlayerData>().maxArmor = PlayerPrefs.GetInt("MaxArmor");
     }
 
     // Update is called once per frame
