@@ -490,8 +490,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d6376450f38f54696d7f2ab9b7fc40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainGroup: {fileID: 0}
-  aboutGroup: {fileID: 0}
+  mainGroup: {fileID: 614439978}
+  aboutGroup: {fileID: 1457380554}
 --- !u!1 &547910678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,13 +1240,14 @@ GameObject:
   - component: {fileID: 1457380551}
   - component: {fileID: 1457380553}
   - component: {fileID: 1457380552}
+  - component: {fileID: 1457380554}
   m_Layer: 5
   m_Name: AboutGroupPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1457380551
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1305,6 +1306,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457380550}
   m_CullTransparentMesh: 1
+--- !u!225 &1457380554
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457380550}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1794215831
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,7 +1917,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2146183851}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420033}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: OnAboutClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2146183851
 MonoBehaviour:
   m_ObjectHideFlags: 0
