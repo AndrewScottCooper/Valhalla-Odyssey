@@ -7,6 +7,9 @@ public class PlayerData : MonoBehaviour
 
     public int health;
     public int maxHealth;
+    public int soulsCollected;
+
+
     public int arrowDamage;
 
     // Start is called before the first frame update
