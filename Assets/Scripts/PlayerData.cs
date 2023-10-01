@@ -15,6 +15,8 @@ public class PlayerData : MonoBehaviour
 
 
     public int arrowDamage;
+    public float damageTime = 0.5f; // time in seconds player is invulnerable after being hit
+    float damageTimeReset = 0.0f; 
 
     // Start is called before the first frame update
     void Start()
@@ -25,24 +27,27 @@ public class PlayerData : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        damageTimeReset += Time.deltaTime;
     }
 
     //should be updated to take the amount of damage from a specific enemy type later if we change this
     public void takeDamage()
     {
-        if (currArmor == 0)
-        {
-            health -= 1;
-            if (health <= 0)
+        if (damageTimeReset > damageTime) { 
+            if (currArmor == 0)
             {
-                Destroy(gameObject);
+                health -= 1;
+                if (health <= 0)
+                {
+                    Destroy(gameObject);
+                }
             }
+            else
+            {
+                currArmor -= 1; 
+            }
+            PlayerUIManager.UpdateHealthBar();
+            damageTimeReset = 0f;
         }
-        else
-        {
-            currArmor -= 1; 
-        }
-        PlayerUIManager.UpdateHealthBar();
     }
 }

@@ -22,8 +22,8 @@ public class PlayerAiming : MonoBehaviour
         transform.position = Player.transform.position; // move self with player position
 
         // rotate aimpoint to face mouse position.
-        Vector2 lookDirection = mousePos - AimRotateRigidBody.position; // 
-        float turnAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90f; //
+        Vector2 lookDirection = mousePos - AimRotateRigidBody.position;  
+        float turnAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90f;
         AimRotateRigidBody.rotation = turnAngle;
     }
 }

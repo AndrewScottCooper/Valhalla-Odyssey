@@ -27,10 +27,10 @@ public class PlayerShooting : MonoBehaviour
     void Shoot()
     {
         
-        GameObject Projectile = Instantiate(ProjectilePrefab, aimPoint.position, aimPoint.rotation);
-        Rigidbody2D ProjectileRigidBody = Projectile.GetComponent<Rigidbody2D>();
-        ProjectileRigidBody.AddForce(aimPoint.up * arrowProjectileForce, ForceMode2D.Impulse);
-        arrowCooldown = 0f;
+        GameObject Projectile = Instantiate(ProjectilePrefab, aimPoint.position, aimPoint.rotation); //create arrow prefab
+        Rigidbody2D ProjectileRigidBody = Projectile.GetComponent<Rigidbody2D>(); 
+        ProjectileRigidBody.AddForce(aimPoint.up * arrowProjectileForce, ForceMode2D.Impulse); // move arrow in direction of mouse
+        arrowCooldown = 0f; //reset arrow cooldown
 
     }
 }

@@ -15,6 +15,7 @@ public class Projectile : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // ~~ ~~ WHENEVER we add an impact visual effect we can use this ~~ ~~ //
         // GameObject effect = Instantiate(impactEffect, transform.position, Quaternion.identity); // play a visual hit effect
         // Destroy(effect, 5f);\
 
@@ -23,6 +24,8 @@ public class Projectile : MonoBehaviour
         {
           collision.gameObject.GetComponent<EnemyData>().TakeDamage(damage);
         }
+
+        // ~~ ~~ probably need to change this to hit enemy or wall
         Destroy(gameObject); // destroy the projectile
         
     }
