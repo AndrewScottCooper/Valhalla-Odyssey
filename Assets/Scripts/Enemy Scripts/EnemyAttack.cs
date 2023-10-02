@@ -27,6 +27,10 @@ public class EnemyAttack : MonoBehaviour
     private EnemyData.EnemyType enemyType;
 
     public List<GameObject> waypoints;
+    public int currentWaypoint =0;
+    public GameObject Minion;
+    public float SpawnTime;
+    public float SpawnTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +59,10 @@ public class EnemyAttack : MonoBehaviour
         if (enemyType == EnemyData.EnemyType.EldritchThrallV2)
         {
             ThrallV1MovementAndAttack();
+        }
+        if(enemyType == EnemyData.EnemyType.Boss1)
+        {
+            BossV1MovementAndAttack();
         }
     }
 
@@ -87,6 +95,46 @@ public class EnemyAttack : MonoBehaviour
         }
         //keep the timer counting down
         timetoshoot -= Time.deltaTime;
+    }
+
+    public void BossV1MovementAndAttack()
+    {
+         float distance = Vector2.Distance(transform.position, target.position);
+   
+         transform.position = Vector2.MoveTowards(transform.position, waypoints[currentWaypoint].transform.position, movementSpeed * Time.deltaTime);
+
+        //If we are close enough to attack,begin attacking
+        if (distance < engagementDistance && distance > retreatDistance)
+        {
+            transform.position = this.transform.position;
+            if (timetoshoot <= 0)
+            {
+
+                Instantiate(projectile, transform.position, Quaternion.identity);
+                if(SpawnTimer <= 0)
+                {
+                 Instantiate(Minion, transform.position, Quaternion.identity);
+                    SpawnTimer = SpawnTime;
+                }
+                
+                timetoshoot = shotTime;
+
+            }
+
+        }
+        //if the player is getting too close run away a bit
+        float distanceToWaypoint = Vector2.Distance(transform.position, waypoints[currentWaypoint].transform.position);
+        if (transform.position == waypoints[currentWaypoint].transform.position || distanceToWaypoint < 10)
+        {
+            currentWaypoint++;
+            if(currentWaypoint == waypoints.Count)
+            {
+                currentWaypoint = 0;
+            }
+        }
+        //keep the timer counting down
+        timetoshoot -= Time.deltaTime;
+        SpawnTimer -= Time.deltaTime;
     }
 
 

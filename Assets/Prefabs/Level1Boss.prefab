@@ -105,9 +105,22 @@ MonoBehaviour:
   retreatDistance: 0
   movementSpeed: 0
   shotTime: 0
-  projectile: {fileID: 0}
+  projectile: {fileID: 4350182701510804798, guid: 9cfbfae032d7f024fabb41594edfa6b7, type: 3}
   ProjectileForce: 10
   ShootingPointDist: 3
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentWaypoint: 0
+  Minion: {fileID: 4340636730532883908, guid: 3602f2d8bf3784c4699d0e091c0e9cd3, type: 3}
 --- !u!114 &6009410223562480525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,9 +134,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hostileType: 3
-  soulDrop: {fileID: 0}
-  Health: 0
-  MaxHealth: 0
+  soulDrop: {fileID: 863978717061368475, guid: 4a2671aa8b3db1149b65e84ea3f7467d, type: 3}
+  Health: 20
+  MaxHealth: 20
 --- !u!61 &1859700933443423585
 BoxCollider2D:
   m_ObjectHideFlags: 0
