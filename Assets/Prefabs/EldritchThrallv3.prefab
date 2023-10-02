@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &558227026538942072
 SpriteRenderer:
@@ -104,11 +104,16 @@ MonoBehaviour:
   visibleDistance: 30
   engagementDistance: 4
   retreatDistance: 0
-  movementSpeed: 3
+  movementSpeed: 5.5
   shotTime: 0.1
   projectile: {fileID: 4350182701510804798, guid: 9cfbfae032d7f024fabb41594edfa6b7, type: 3}
-  ProjectileForce: 10
+  ProjectileForce: 20
   ShootingPointDist: 3
+  waypoints: []
+  currentWaypoint: 0
+  Minion: {fileID: 0}
+  SpawnTime: 0
+  SpawnTimer: 0
 --- !u!114 &1238810993036839444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +173,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6, y: 1.6}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!50 &-4010889340182665529
 Rigidbody2D:

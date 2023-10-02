@@ -104,11 +104,16 @@ MonoBehaviour:
   visibleDistance: 30
   engagementDistance: 20
   retreatDistance: 10
-  movementSpeed: 5
+  movementSpeed: 8
   shotTime: 3
   projectile: {fileID: 4350182701510804798, guid: 9cfbfae032d7f024fabb41594edfa6b7, type: 3}
-  ProjectileForce: 10
+  ProjectileForce: 20
   ShootingPointDist: 3
+  waypoints: []
+  currentWaypoint: 0
+  Minion: {fileID: 0}
+  SpawnTime: 0
+  SpawnTimer: 0
 --- !u!114 &6088070279562614277
 MonoBehaviour:
   m_ObjectHideFlags: 0

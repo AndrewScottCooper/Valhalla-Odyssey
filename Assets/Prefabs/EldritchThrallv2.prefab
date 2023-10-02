@@ -104,11 +104,16 @@ MonoBehaviour:
   visibleDistance: 20
   engagementDistance: 13
   retreatDistance: 0
-  movementSpeed: 5
+  movementSpeed: 8
   shotTime: 0.3
   projectile: {fileID: 4350182701510804798, guid: 9cfbfae032d7f024fabb41594edfa6b7, type: 3}
-  ProjectileForce: 10
+  ProjectileForce: 20
   ShootingPointDist: 3
+  waypoints: []
+  currentWaypoint: 0
+  Minion: {fileID: 0}
+  SpawnTime: 0
+  SpawnTimer: 0
 --- !u!114 &2418670270739833559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +173,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6, y: 1.6}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!50 &6239837507182221811
 Rigidbody2D:

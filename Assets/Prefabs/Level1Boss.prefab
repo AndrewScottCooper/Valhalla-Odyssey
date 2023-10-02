@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1743653780074741640
 SpriteRenderer:
@@ -121,6 +121,8 @@ MonoBehaviour:
   - {fileID: 0}
   currentWaypoint: 0
   Minion: {fileID: 4340636730532883908, guid: 3602f2d8bf3784c4699d0e091c0e9cd3, type: 3}
+  SpawnTime: 0
+  SpawnTimer: 0
 --- !u!114 &6009410223562480525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,5 +182,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6, y: 1.6}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0

@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c45a92d5d349484d9f41ca9e3ad505a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 10
   playerRigidBody: {fileID: 1896693194078643776}
   playerCam: {fileID: 324021582815291408}
   animator: {fileID: 2605666309151348031}
@@ -302,6 +302,10 @@ MonoBehaviour:
   soulsCollected: 0
   arrowDamage: 1
   damageTime: 0.5
+  hasBuiltMeadhall: f
+  hasBuiltShipyard: f
+  hasBuiltBowyer: f
+  hasBuiltBlacksmith: f
 --- !u!95 &2605666309151348031
 Animator:
   serializedVersion: 5
