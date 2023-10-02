@@ -64,6 +64,14 @@ public class EnemyAttack : MonoBehaviour
         {
             BossV1MovementAndAttack();
         }
+        if (enemyType == EnemyData.EnemyType.Boss2)
+        {
+            BossV1MovementAndAttack();
+        }
+        if (enemyType == EnemyData.EnemyType.Boss3)
+        {
+            BossV1MovementAndAttack();
+        }
     }
 
     //This function handles the movement and spawns the thrall's attacks

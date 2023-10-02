@@ -317,6 +317,10 @@ PrefabInstance:
       propertyPath: targetScene
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7679191126447854415, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e739c943d63358d41b08d7e854dc31ec, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -832,6 +836,10 @@ PrefabInstance:
       propertyPath: targetScene
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7679191126447854415, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d56d5600fac2ea9498b9970c9e393250, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -897,6 +905,10 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 497709564}
+    - target: {fileID: 7679191126447854415, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: afde4e624465893459c941f8575f34bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -966,6 +978,10 @@ PrefabInstance:
       propertyPath: targetScene
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7679191126447854415, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d2186db341599644e834ac680f84893e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
