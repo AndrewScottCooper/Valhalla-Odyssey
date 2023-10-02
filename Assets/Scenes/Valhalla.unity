@@ -884,6 +884,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1077392463 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6689586515152149618, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+  m_PrefabInstance: {fileID: 8657560567051007535}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1207432024 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3227605025343399437, guid: 8248f1a9ca1bf344bb10edc54b3946a1, type: 3}
@@ -996,6 +1001,10 @@ PrefabInstance:
     - target: {fileID: 1321207535207035392, guid: e84b666f459a086478ad40c84d060c31, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043468939952783972, guid: e84b666f459a086478ad40c84d060c31, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2200287701395949897, guid: e84b666f459a086478ad40c84d060c31, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1885,6 +1894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 7484388871085561503, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1077392463}
     - target: {fileID: 7484388871085561503, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
       propertyPath: targetScene
       value: 2

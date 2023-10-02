@@ -9,6 +9,7 @@ public class Portal : MonoBehaviour
 
     public int targetScene;
     public bool keyReset = true;
+    public GameObject gameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -29,8 +30,11 @@ public class Portal : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            gameManager.GetComponent<SaveSystem>().SaveAllData();
+            Debug.Log("Data saved, " + PlayerPrefs.GetInt("SoulsCollected"));
             if (Input.GetButton("Submit"))
             {
+                
                 NextLevel();
             }
 

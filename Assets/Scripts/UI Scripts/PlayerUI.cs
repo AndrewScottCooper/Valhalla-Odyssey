@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,16 +23,24 @@ public class PlayerUI : MonoBehaviour
     public CanvasGroup bowyerGroup;
     public CanvasGroup blacksmithGroup;
 
-   public void UpdateHealthBar()
+    private void Start()
+    {
+        //make sure labels aren't default on level loading
+        UpdateHealthBar();
+        UpdateSoulLabel();
+    }
+
+    public void UpdateHealthBar()
     {
         //if armor was taken away or health restored resting the base images will undo those
         ResetHearts();
        
         for (int i = 0; i < player.GetComponent<PlayerData>().maxHealth; i++)
         {
-            if(i < player.GetComponent<PlayerData>().maxHealth)
+            Image temp = HealthBar[i];
+            if (i < player.GetComponent<PlayerData>().maxHealth)
             {
-                Image temp = HealthBar[i];
+                
                 temp.enabled = true;
             }  
             //the current slot is armored change the icon to be armored
@@ -41,9 +50,13 @@ public class PlayerUI : MonoBehaviour
             }
             //if the value of the player health is less than the max number of health bars and the index is higher than the current health, set the heart to
             //empty health icon
-            else if (player.GetComponent<PlayerData>().health < player.GetComponent<PlayerData>().maxHealth && i  > player.GetComponent<PlayerData>().health)
+            else if (player.GetComponent<PlayerData>().health < player.GetComponent<PlayerData>().maxHealth && i  >= player.GetComponent<PlayerData>().health)
             {
                 HealthBar[i].sprite = HealthIcons[1];
+            }
+            else if(i >= player.GetComponent<PlayerData>().maxHealth)
+            {
+                temp.enabled = false;
             }
             
         }

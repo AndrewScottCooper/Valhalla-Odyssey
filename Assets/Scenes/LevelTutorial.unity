@@ -133,19 +133,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -567936745273303305, guid: 8248f1a9ca1bf344bb10edc54b3946a1, type: 3}
       propertyPath: health
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -567936745273303305, guid: 8248f1a9ca1bf344bb10edc54b3946a1, type: 3}
       propertyPath: maxArmor
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -567936745273303305, guid: 8248f1a9ca1bf344bb10edc54b3946a1, type: 3}
       propertyPath: currArmor
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -567936745273303305, guid: 8248f1a9ca1bf344bb10edc54b3946a1, type: 3}
       propertyPath: maxHealth
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -567936745273303305, guid: 8248f1a9ca1bf344bb10edc54b3946a1, type: 3}
       propertyPath: PlayerUIManager
@@ -379,6 +379,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+--- !u!1 &1717217262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6689586515152149618, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+  m_PrefabInstance: {fileID: 1717217261}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1721940587 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7180329074669540280, guid: e84b666f459a086478ad40c84d060c31, type: 3}
@@ -507,6 +512,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 7484388871085561503, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1717217262}
     - target: {fileID: 7484388871085561503, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
       propertyPath: targetScene
       value: 2

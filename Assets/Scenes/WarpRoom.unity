@@ -307,8 +307,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5546117099147665119, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
       propertyPath: m_Name
-      value: Portal (1)
+      value: Level2Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 7484388871085561503, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 497709564}
     - target: {fileID: 7484388871085561503, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
       propertyPath: targetScene
       value: 5
@@ -578,6 +582,76 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!1001 &497709563
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2455849732872612825, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1500503632}
+    - target: {fileID: 2461395748304476182, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461395748304476182, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.7791727
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461395748304476182, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5286572
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461395748304476182, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.0081005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461395748304476182, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461395748304476182, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461395748304476182, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461395748304476182, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461395748304476182, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461395748304476182, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461395748304476182, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689586515152149618, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+--- !u!1 &497709564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6689586515152149618, guid: 0a28ebcb6f3b4254aa46ebe479c679f3, type: 3}
+  m_PrefabInstance: {fileID: 497709563}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &638599264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -632,8 +706,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5546117099147665119, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
       propertyPath: m_Name
-      value: Portal
+      value: Level1Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 7484388871085561503, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 497709564}
     - target: {fileID: 7484388871085561503, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
       propertyPath: targetScene
       value: 4
@@ -697,8 +775,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5546117099147665119, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
       propertyPath: m_Name
-      value: Portal (3)
+      value: ValhallaPortal
       objectReference: {fileID: 0}
+    - target: {fileID: 7484388871085561503, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 497709564}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -758,8 +840,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5546117099147665119, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
       propertyPath: m_Name
-      value: Portal (2)
+      value: Level3Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 7484388871085561503, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 497709564}
     - target: {fileID: 7484388871085561503, guid: ae1c1d0d08792944aa06b52a8378410c, type: 3}
       propertyPath: targetScene
       value: 6
@@ -830,6 +916,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8248f1a9ca1bf344bb10edc54b3946a1, type: 3}
+--- !u!1 &1500503632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3521981902190044496, guid: 8248f1a9ca1bf344bb10edc54b3946a1, type: 3}
+  m_PrefabInstance: {fileID: 1500503631}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1527954611
 GameObject:
   m_ObjectHideFlags: 0
