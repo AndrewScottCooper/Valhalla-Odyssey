@@ -101,6 +101,7 @@ MonoBehaviour:
   ProjectilePrefab: {fileID: 450044471435314949, guid: 724f9369a143c41418b587f3ba606543, type: 3}
   arrowFireRate: 0.5
   arrowProjectileForce: 20
+  canShoot: 1
 --- !u!1 &3521981902190044496
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,6 +116,7 @@ GameObject:
   - component: {fileID: 6598912327263068751}
   - component: {fileID: 7526217375395799970}
   - component: {fileID: -567936745273303305}
+  - component: {fileID: 2605666309151348031}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -233,6 +235,8 @@ MonoBehaviour:
   moveSpeed: 5
   playerRigidBody: {fileID: 1896693194078643776}
   playerCam: {fileID: 324021582815291408}
+  animator: {fileID: 2605666309151348031}
+  canMove: 1
 --- !u!61 &7526217375395799970
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -298,6 +302,26 @@ MonoBehaviour:
   soulsCollected: 0
   arrowDamage: 1
   damageTime: 0.5
+--- !u!95 &2605666309151348031
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3521981902190044496}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3358fe2ded682d54e8525f1f15e64e5f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &5702454974434650158
 GameObject:
   m_ObjectHideFlags: 0
