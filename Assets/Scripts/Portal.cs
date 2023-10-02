@@ -27,7 +27,7 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.GetComponent<Rigidbody2D>().CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             if (Input.GetButton("Submit"))
             {

@@ -103,7 +103,7 @@ MonoBehaviour:
   visibleDistance: 30
   engagementDistance: 20
   retreatDistance: 10
-  movementSpeed: 3
+  movementSpeed: 5
   shotTime: 3
   projectile: {fileID: 4350182701510804798, guid: 9cfbfae032d7f024fabb41594edfa6b7, type: 3}
   ProjectileForce: 10
