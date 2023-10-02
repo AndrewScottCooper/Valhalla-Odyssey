@@ -100,10 +100,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  visibleDistance: 0
-  engagementDistance: 0
+  visibleDistance: 35
+  engagementDistance: 30
   retreatDistance: 0
-  movementSpeed: 0
+  movementSpeed: 5
   shotTime: 0
   projectile: {fileID: 4350182701510804798, guid: 9cfbfae032d7f024fabb41594edfa6b7, type: 3}
   ProjectileForce: 10

@@ -6728,11 +6728,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1783294382228117236, guid: 836bd37961963c843876fc7b0f6fd747, type: 3}
       propertyPath: visibleDistance
-      value: 30
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 1783294382228117236, guid: 836bd37961963c843876fc7b0f6fd747, type: 3}
       propertyPath: engagementDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1783294382228117236, guid: 836bd37961963c843876fc7b0f6fd747, type: 3}
       propertyPath: waypoints.Array.size
