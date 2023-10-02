@@ -50,6 +50,10 @@ public class EnemyAttack : MonoBehaviour
         {
             ThrallV1MovementAndAttack();
         }
+        if (enemyType == EnemyData.EnemyType.EldritchThrallV2)
+        {
+            ThrallV1MovementAndAttack();
+        }
     }
 
     //This function handles the movement and spawns the thrall's attacks
