@@ -75,7 +75,7 @@ public class EnemyAttack : MonoBehaviour
 
         }
         //if the player is getting too close run away a bit
-        else
+        else if(distance < engagementDistance && distance < retreatDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, -movementSpeed * Time.deltaTime);
         }
