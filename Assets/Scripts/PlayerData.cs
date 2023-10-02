@@ -17,7 +17,12 @@ public class PlayerData : MonoBehaviour
 
     public int arrowDamage;
     public float damageTime = 0.5f; // time in seconds player is invulnerable after being hit
-    float damageTimeReset = 0.0f; 
+    float damageTimeReset = 0.0f;
+
+    public string hasBuiltMeadhall = "f";
+    public string hasBuiltShipyard = "f";
+    public string hasBuiltBowyer = "f";
+    public string hasBuiltBlacksmith = "f";
 
     // Start is called before the first frame update
     void Start()

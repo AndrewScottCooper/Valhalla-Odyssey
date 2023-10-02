@@ -16,6 +16,8 @@ public class PlayerUI : MonoBehaviour
     public int armorSoulCost;
     public int arrowUpgradeCost;
 
+    public int buildingCost;
+
     public TMPro.TMP_Text soulLabel;
 
     public CanvasGroup meadhallGroup;
@@ -23,11 +25,16 @@ public class PlayerUI : MonoBehaviour
     public CanvasGroup bowyerGroup;
     public CanvasGroup blacksmithGroup;
 
+    public GameObject shipyard;
+    public GameObject bowyer;
+    public GameObject blacksmith;
+
     private void Start()
     {
         //make sure labels aren't default on level loading
         UpdateHealthBar();
         UpdateSoulLabel();
+        SpawnPurchasedBuildings();
     }
 
     public void UpdateHealthBar()
@@ -135,6 +142,52 @@ public class PlayerUI : MonoBehaviour
     public void BlacksmithDisplay()
     {
         blacksmithGroup.gameObject.SetActive(!blacksmithGroup.gameObject.activeSelf);
+    }
+
+    public void BuildShipyard()
+    {
+        if (player.GetComponent<PlayerData>().soulsCollected >= buildingCost)
+        {
+            player.GetComponent<PlayerData>().soulsCollected -= buildingCost;
+            player.GetComponent<PlayerData>().hasBuiltShipyard = "t";
+            SpawnPurchasedBuildings();
+            UpdateSoulLabel();
+        }
+    }
+    public void BuildBowyer()
+    {
+        if (player.GetComponent<PlayerData>().soulsCollected >= buildingCost)
+        {
+            player.GetComponent<PlayerData>().soulsCollected -= buildingCost;
+            player.GetComponent<PlayerData>().hasBuiltBowyer = "t";
+            SpawnPurchasedBuildings();
+            UpdateSoulLabel();
+        }
+    }
+    public void BuildBlacksmith()
+    {
+        if (player.GetComponent<PlayerData>().soulsCollected >= buildingCost)
+        {
+            player.GetComponent<PlayerData>().soulsCollected -= buildingCost;
+            player.GetComponent<PlayerData>().hasBuiltBlacksmith = "t";
+            SpawnPurchasedBuildings();
+            UpdateSoulLabel();
+        }
+    }
+    public void SpawnPurchasedBuildings()
+    {
+        if (player.GetComponent<PlayerData>().hasBuiltShipyard == "t")
+        {
+           shipyard.gameObject.SetActive(true);
+        }
+        if (player.GetComponent<PlayerData>().hasBuiltBowyer == "t")
+        {
+            bowyer.gameObject.SetActive(true);
+        }
+        if (player.GetComponent<PlayerData>().hasBuiltBlacksmith == "t")
+        {
+            blacksmith.gameObject.SetActive(true);
+        }
     }
 
 

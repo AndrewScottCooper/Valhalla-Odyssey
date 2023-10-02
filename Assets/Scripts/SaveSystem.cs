@@ -21,15 +21,18 @@ public class SaveSystem : MonoBehaviour
             PlayerPrefs.SetInt("ArrowDamage", 1);
 
             //Example of a way to check if an upgrade has been bought
-            PlayerPrefs.SetString("Armor1", "false");
+            PlayerPrefs.SetString("BuiltMeadhall", "f");
+            PlayerPrefs.SetString("BuiltShipyard", "f");
+            PlayerPrefs.SetString("BuiltBowyer", "f");
+            PlayerPrefs.SetString("BuiltBlacksmith", "f");
         }
         //Load data at the start of each level
         else
         {
             LoadData();
         }
-          
-    }
+
+}
 
     //Double Check all changable / upgradable data types are in both save and load functions!
     public void SaveAllData()
@@ -42,9 +45,12 @@ public class SaveSystem : MonoBehaviour
         PlayerPrefs.SetInt("MaxArmor", player.GetComponent<PlayerData>().maxHealth);
 
         //Example of a way to check if an upgrade has been bought
-        PlayerPrefs.SetString("Armor1", "false");
+        PlayerPrefs.SetString("BuiltMeadhall", player.GetComponent<PlayerData>().hasBuiltMeadhall);
+        PlayerPrefs.SetString("BuiltShipyard", player.GetComponent<PlayerData>().hasBuiltShipyard);
+        PlayerPrefs.SetString("BuiltBowyer", player.GetComponent<PlayerData>().hasBuiltBowyer);
+        PlayerPrefs.SetString("BuiltBlacksmith", player.GetComponent<PlayerData>().hasBuiltBlacksmith);
 
-    
+
     }
 
     public void LoadData()
@@ -56,6 +62,11 @@ public class SaveSystem : MonoBehaviour
         player.GetComponent<PlayerData>().currArmor = PlayerPrefs.GetInt("Armor");
         player.GetComponent<PlayerData>().maxArmor = PlayerPrefs.GetInt("MaxArmor");
 
+
+        player.GetComponent<PlayerData>().hasBuiltMeadhall = PlayerPrefs.GetString("BuiltMeadhall");
+        player.GetComponent<PlayerData>().hasBuiltShipyard = PlayerPrefs.GetString("BuiltShipyard");
+        player.GetComponent<PlayerData>().hasBuiltBowyer = PlayerPrefs.GetString("BuiltBowyer");
+        player.GetComponent<PlayerData>().hasBuiltBlacksmith = PlayerPrefs.GetString("BuiltBlacksmith");
     }
 
     // Update is called once per frame
