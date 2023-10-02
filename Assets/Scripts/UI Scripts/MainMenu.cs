@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour
 
     public void OnPlayButtonClicked()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(3);
     }
     public void OnAboutClicked()
     {
