@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class EnemyData : MonoBehaviour
 {
     public EnemyType hostileType;
+    public GameObject soulDrop;
 
     public int Health;
     public int MaxHealth;
@@ -26,6 +28,7 @@ public class EnemyData : MonoBehaviour
         Health -= dmg;
         if(Health <= 0)
         {
+           Instantiate(soulDrop, transform.position,quaternion.identity);
           Destroy(gameObject);
         }
 
