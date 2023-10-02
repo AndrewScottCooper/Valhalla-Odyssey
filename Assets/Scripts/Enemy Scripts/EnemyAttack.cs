@@ -26,6 +26,8 @@ public class EnemyAttack : MonoBehaviour
     private float numberOfShots;
     private EnemyData.EnemyType enemyType;
 
+    public List<GameObject> waypoints;
+
     // Start is called before the first frame update
     void Start()
     {
