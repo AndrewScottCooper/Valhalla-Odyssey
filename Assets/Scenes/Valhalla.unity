@@ -1010,6 +1010,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 3.9262085
       objectReference: {fileID: 0}
+    - target: {fileID: 2318799530678614844, guid: e84b666f459a086478ad40c84d060c31, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2318799530678614844, guid: e84b666f459a086478ad40c84d060c31, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2318799530678614844, guid: e84b666f459a086478ad40c84d060c31, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1300772403}
+    - target: {fileID: 2318799530678614844, guid: e84b666f459a086478ad40c84d060c31, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2318799530678614844, guid: e84b666f459a086478ad40c84d060c31, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpgradeArrowDamage
+      objectReference: {fileID: 0}
+    - target: {fileID: 2318799530678614844, guid: e84b666f459a086478ad40c84d060c31, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2318799530678614844, guid: e84b666f459a086478ad40c84d060c31, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3681210730818279971, guid: e84b666f459a086478ad40c84d060c31, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 1.4001465
@@ -1041,6 +1069,10 @@ PrefabInstance:
     - target: {fileID: 5382125292242883898, guid: e84b666f459a086478ad40c84d060c31, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.049987793
+      objectReference: {fileID: 0}
+    - target: {fileID: 5545455923084110972, guid: e84b666f459a086478ad40c84d060c31, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5777939258135427135, guid: e84b666f459a086478ad40c84d060c31, type: 3}
       propertyPath: m_Name
