@@ -57,4 +57,10 @@ public class PlayerData : MonoBehaviour
             damageTimeReset = 0f;
         }
     }
+
+    public void RestAndRepair()
+    {
+        health = maxHealth;
+        currArmor = maxArmor;
+    }
 }
